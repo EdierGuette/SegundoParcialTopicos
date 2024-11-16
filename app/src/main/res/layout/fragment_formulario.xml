@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FormularioFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp"
+    android:paddingVertical="16dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:textColor="#00FF88"
+        android:fontFamily="sans-serif-condensed"
+    />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        android:textColor="#FFFFFF"
+        android:hint="Ingrese su nombre"
+        android:textColorHint="#888888"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textSize="18sp"
+        android:textColor="#00FF88"
+        android:fontFamily="sans-serif-condensed" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        android:textColor="#FFFFFF"
+        android:hint="Ingrese una descripción"
+        android:textColorHint="#888888"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de personaje"
+        android:textSize="18sp"
+        android:textColor="#00FF88"
+        android:fontFamily="sans-serif-condensed" />
+
+    <CheckBox
+        android:id="@+id/cbPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Principal"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbSecundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secundario"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar Imagen"
+        android:textSize="18sp"
+        android:textColor="#00FF88"
+        android:fontFamily="sans-serif-condensed" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_upload"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:backgroundTint="#00FF88"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed" />
+</LinearLayout>
